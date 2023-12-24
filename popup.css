@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #2c7eb8 , #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(253, 253, 253);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: rgb(15, 189, 97);
+    cursor: pointer;
+
+}
+
+.popup{
+    width: 350px;
+    background: white;
+    border-radius: 6px;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    
+
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0 ;
+    background: rgb(34, 166, 34);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:620px) {
+    .container{
+        width: 100%;
+        min-height: 100vh;
+       
+    }
+
+    #button{
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+
+    .popup{
+        width: 250px;
+        
+        padding: 0 20px 20px;
+       
+    }
+
+    .popup img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+    }
+    
+    .popup h2{
+        font-size: 28px;
+        font-weight: 300;
+        margin: 5px 5px 5px;
+    }
+    
+    .popup button{
+        width: 100%;
+        margin-top: 30px;
+        padding: 8px 0 ;
+       
+        font-size: 12px;
+       
+    }
+
+    .popup p{
+        font-size: 14px;
+    }
+
+
+
+}
